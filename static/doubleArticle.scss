@@ -1,0 +1,38 @@
+.doubleArticleForm{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 300px;
+}
+
+.rowCol{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row; 
+    margin-top:100px !important;
+}
+
+.separator{
+    display:none;
+}
+
+.mb50{
+    margin-bottom:50px !important;
+
+}
+
+body{
+    height: fit-content;
+}
+
+@media only screen and (max-width: 800px) {
+    .rowCol{
+        display:flex;
+        justify-content:space-around;
+        flex-direction:column;
+        margin:auto;
+    }
+    .separator{
+        display: block;
+    }
+}

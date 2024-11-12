@@ -1,0 +1,329 @@
+:root {
+  --bg-primary: #1D1B17;
+  --bg-secondary: #413626;
+  --color-primary: #FFF9ED;
+  --color-secondary: #997247;
+  --color-warning: #8c0000;
+  --headers: #644F33;
+  --font-h1: 40px;
+  --font-h2: 30px;
+  --font-primary: 20px;
+  --font-small: 10px;
+}
+
+@font-face {
+  font-family: primaryFont;
+  src: url("font.ttf");
+}
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--font-h1);
+  font-family: primaryFont;
+}
+
+body {
+  text-align: center;
+  background: var(--bg-primary);
+  margin: 0;
+  height: 100vh;
+  min-width: fit-content;
+}
+body .buttonContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body .curseBox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+body .curseBox .bgText {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body .curseBox .card {
+  max-width: 334px;
+  width: 25vw;
+  /* Or whatever */
+  height: 25vh;
+  /* Or whatever */
+  margin: auto;
+  /* Magic! */
+  border: 0;
+  box-shadow: 0 0 1px var(--bg-secondary), 0 0 1px var(--bg-secondary), 0 0 1px var(--bg-secondary), 0 0 1px var(--bg-secondary), 0 0 1px var(--bg-secondary), 0 0 1px var(--bg-secondary), 0 0 70px var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+body .curseBox .card .verse {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body .curseBox .card .main {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: primaryFont;
+  text-align: center;
+}
+
+body .curseBox .card:hover {
+  box-shadow: 0 0 1px var(--color-secondary), 0 0 1px var(--color-secondary), 0 0 1px var(--color-secondary), 0 0 1px var(--color-secondary), 0 0 1px var(--color-secondary), 0 0 1px var(--color-secondary), 0 0 70px var(--color-secondary);
+}
+
+body .mainBox {
+  min-height: 80vh;
+  min-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body .mainBox h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+body .mainBox p {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: secondaryFont;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  body .curseBox {
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  body .card {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+    width: 100% !important;
+    height: 50vh !important;
+  }
+
+  body .mainBox {
+    min-height: 80vh;
+  }
+}
+.glowText {
+  text-shadow: 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 70px var(--color-secondary);
+}
+
+.glowTextDark {
+  text-shadow: 0 0 5px var(--bg-primary), 0 0 5px var(--bg-primary), 0 0 5px var(--bg-primary), 0 0 5px var(--bg-primary), 0 0 5px var(--bg-primary), 0 0 5px var(--bg-primary), 0 0 70px var(--bg-primary);
+}
+
+.fsmall {
+  font-size: var(--font-small);
+}
+
+.fsizeprimary {
+  font-size: var(--font-primary);
+}
+
+.fprimary {
+  font-family: primaryFont !important;
+  font-size: var(--font-primary);
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+.calendarFamily {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important;
+}
+
+.cprimary {
+  color: var(--color-primary) !important;
+}
+
+.cdark {
+  color: var(--bg-primary) !important;
+}
+
+.bgImageHell {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/hell.jpg");
+}
+
+.bgImageWitches {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/witches.jpg");
+}
+
+.bgImageSaturn {
+  background-size: cover;
+  background-image: url("./images/Saturn.jpg");
+}
+
+.bgImageOldMen {
+  background-size: cover;
+  background-image: url("./images/oldMen.jpg");
+}
+
+.bgImageHeartbreak {
+  background-size: cover;
+  background-image: url("./images/heartbreak.jpg");
+}
+
+.bgImagePoor {
+  background-size: cover;
+  background-image: url("./images/sorrow.jpg");
+}
+
+.bgPublicShame {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/publicShame.jpg");
+}
+
+.bgImageHeartbreakDarken {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/heartbreak.jpg");
+}
+
+.bgImagePoorDarken {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/sorrow.jpg");
+}
+
+.bgImageOldMenDarken {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/oldMen.jpg");
+}
+
+.bgImageSaturnDarken {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/Saturn.jpg");
+}
+
+.bgImageSlaveMarketDarken {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/slaveMarket.jpg");
+}
+
+.bgSacrificeDarken {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/sacrifice.jpg");
+}
+
+.bgImageSlaveMarket {
+  background-size: cover;
+  background-image: url("./images/slaveMarket.jpg");
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.lrauto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:active {
+  text-shadow: 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 5px var(--color-secondary), 0 0 70px var(--color-secondary);
+}
+
+.attention {
+  background: var(--color-warning);
+}
+
+.continue {
+  background: var(--color-primary);
+  color: var(--bg-primary);
+}
+
+.footer {
+  min-height: 10vh;
+  color: var(--color-warning);
+  font-size: var(--font-small);
+}
+
+.footer p {
+  padding-top: 10%;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+.f20 {
+  font-size: 20px !important;
+}
+
+.per90 {
+  max-width: 90%;
+}
+
+.per80 {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.scss.map */
+/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.scss.map */
+
+/*# sourceMappingURL=index.css.map */

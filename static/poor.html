@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="./materialize.min.js"></script>
+            
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./article.css">
+    <!-- Hotjar Tracking Code for www.blackmagictv.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:1733031,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Бедност</title>
+</head>
+<body>
+
+    <div class="background bgImagePoorDarken">
+        <h1 class="cprimary glowText h1 ">Бедност</h1>
+    
+    
+        <p class="cprimary per80 f20 calendarFamily">
+            Зад повечето богатства стои престъпление. Парите са власт, която някои хора не бива да имат. 
+            Ако някой трябва да загуби богатството си, въведи колкото можеш повече от данните му по-долу. <br>
+
+            <b>Ефекти :</b>
+            <br>
+
+            Мишената ще загуби пари и собственост и ще стигне до просешка тояга.
+            
+        </p>
+        
+        <div class="punishmentForm">
+            <input type="text" placeholder="Кога е роден богатият?" class="datepicker cprimary">
+            <input type="text" class="cprimary tcenter f20" name="fathersName" placeholder= "Името му">
+
+            <input type="text" class="cprimary tcenter f20" name="fathersName" placeholder= "Бащиното му име">
+            <input type="text" class="cprimary tcenter f20" name="familyname" placeholder= "Фамилията му">
+
+
+            <form method="POST" action="/curse">
+                <input class="button attention cprimary per90" type="submit" value="Изпрати">
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+        
+</body>
+</html>
+ 
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {
+            i18n: {
+                months: ["Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември"],
+                monthsShort: ["Ян", "Фев", "Март", "Апр", "Май", "Юни", "Юли", "Авг", "Сеп", "Окт", "Ноем", "Дек"],
+                weekdays: ["Понеделник","Вторник", "Сряда", "Четвъртък", "Петък", "Събота", "Неделя"],
+                weekdaysShort: ["Пон","Вт", "Ср", "Четв", "Пет", "Съб", "Нед"],
+                weekdaysAbbrev: ["П","В", "С", "Ч", "П", "С", "Н"]
+            }
+        });
+        
+    });
+
+</script> 

@@ -1,0 +1,45 @@
+body {
+  height: fit-content !important;
+}
+
+.background {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 60%;
+  min-width: fit-content;
+  height: 100%;
+}
+
+.h1 {
+  margin: 0 !important;
+  margin-bottom: 20px !important;
+}
+
+.datepicker {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 20px !important;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-primary) !important;
+}
+
+.punishmentForm {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+.attention {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=article.css.map */
