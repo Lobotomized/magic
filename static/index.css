@@ -15,6 +15,10 @@
   font-family: primaryFont;
   src: url("font.ttf");
 }
+@font-face {
+  font-family: primaryEN;
+  src: url("fontEN.otf");
+}
 a {
   text-decoration: none;
 }
@@ -139,6 +143,10 @@ body .mainBox p {
 
 .fsmall {
   font-size: var(--font-small);
+}
+
+.enText{
+  font-family: primaryEN !important;
 }
 
 .fsizeprimary {

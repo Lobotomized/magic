@@ -39,7 +39,14 @@
 
   gtag('config', 'G-LFDSWCSMNY');
 </script>
-<body>
+<script src="./countries.js"></script>
+
+<script>
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const country = timeZoneToCountry[timezone];
+</script>
+
+<body id="body">
 
     <div class="background bgSacrificeDarken">
         <h1 class="cprimary glowText h1 ">Довърши започнатото</h1>
@@ -68,21 +75,36 @@
 
         
 </body>
-</html>
- 
 <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.datepicker');
-        var instances = M.Datepicker.init(elems, {
-            i18n: {
-                months: ["Януари", "Февруари", "Март", "Април", "Май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември", "Декември"],
-                monthsShort: ["Ян", "Фев", "Март", "Апр", "Май", "Юни", "Юли", "Авг", "Сеп", "Окт", "Ноем", "Дек"],
-                weekdays: ["Понеделник","Вторник", "Сряда", "Четвъртък", "Петък", "Събота", "Неделя"],
-                weekdaysShort: ["Пон","Вт", "Ср", "Четв", "Пет", "Съб", "Нед"],
-                weekdaysAbbrev: ["П","В", "С", "Ч", "П", "С", "Н"]
-            }
-        });
-        
-    });
+            document.addEventListener('DOMContentLoaded', function() {
+            const mainContent = document.getElementById('body');
+            const file = country === 'Bulgaria';
+            console.log(country)
+            document.getElementById('body').innerHTML = `
+                <div class="background bgSacrificeDarken">
+                    <h1 class="cprimary glowText h1 enText">Finish what you started</h1>
 
-</script> 
+                    <p class="cprimary per80 f20">
+                        Energy is never lost. It only transforms. You cannot receive without giving.
+
+                        <br>
+                        <b>Beware!</b> For the spell to work, it's not about how much money you leave, but what sacrifice you will feel.
+                        What works for a poor person won't work for a wealthy one.
+                        <br>
+                        The more you sacrifice, the more certain and powerful the effect of the received spell will be.
+                    </p>
+                    
+                    <div class="punishmentForm">
+
+                        <form action="https://www.paypal.com/donate/?hosted_button_id=FZLBVSZ8RCHQ8" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick" />
+                            <input type="hidden" name="hosted_button_id" value="FZLBVSZ8RCHQ8" />
+                            <input type="image" src="./images/sacrificeEN.png" name="submit" title="Give and take..."
+                            alt="Give and take..." />
+                        </form>
+                    </div>
+                </div>
+            `;
+        });
+</script>
+</html>
