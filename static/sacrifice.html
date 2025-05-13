@@ -80,7 +80,8 @@
             const mainContent = document.getElementById('body');
             const file = country === 'Bulgaria';
             console.log(country)
-            document.getElementById('body').innerHTML = `
+            if (!file) {
+                document.getElementById('body').innerHTML = `
                 <div class="background bgSacrificeDarken">
                     <h1 class="cprimary glowText h1 enText">Finish what you started</h1>
 
@@ -105,6 +106,8 @@
                     </div>
                 </div>
             `;
+            }
+            
         });
 </script>
 </html>
